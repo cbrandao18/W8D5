@@ -1,0 +1,117 @@
+
+html {
+  box-sizing: border-box;
+  background: #A9DBB8;
+  text-align: center;
+}
+
+h1 {
+  color: #F0F2EF;
+  font-family: 'helvetica neue';
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.welcome {
+  font-weight: 400;
+  margin-top: 100px;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+.drop-down-dog-list {
+  display: none;
+}
+
+.show-dogs {
+  display: flex;
+}
+
+body {
+  line-height: 1;
+}
+
+.clock-holder {
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-weight: 400;
+  border: .5px solid white;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+#clock {
+  padding: 14px;
+}
+
+.drop-down-dog-nav {
+  width: 200px;
+  height: 50px;
+  border: .5px solid red;
+  margin: 10px auto;
+  background-color: white;
+  color: black;
+}
+
+.drop-down-dog-nav h3 {
+  margin: 15px;
+  font-weight: 600;
+  font-size: 16;
+  font-family: sans-serif;
+}
+
+.drop-down-dog-nav > ul {
+    justify-content: space-between;
+    flex-direction: column;
+    background: #F0F2EF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+.dog-link {
+    color: #767B91;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.dog-link > a {
+    font-family: sans-serif;
+    color: #767B91;
+}
